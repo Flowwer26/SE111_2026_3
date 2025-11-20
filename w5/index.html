@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <!--Tells the -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Your Name Here">
+    <meta name="author" content="Saniyyah Shaheed">
     <meta name="description" content="Default HTML Page for SE 111">
     
     <link type="text/css" rel="stylesheet" href="style.css">
@@ -13,7 +13,191 @@
     <title>Week 5 | Tables and Forms</title>
 </head>
 <body>
-    <!--Build your Table and Form here-->
+    <h1>Birthday Party Registration Form</h1>
+
+    <h2>Week 5 | Tables and Forms</h2>
+    <!-- Start of table -->
+    <table>
+        <!-- Head of table -->
+        <thead>
+            <tr>
+                <b><th>Labels</th></tr></b><br><b><th>Form Fields</th></b>
+            </tr>
+        </thead>
+
+        <!-- Body of table -->
+        <tbody>
+            <tr>
+                <td>Parent/Guardian Name</td>
+                <td>Child's First Name</td>
+                <td>Child's Age</td>
+            </tr>
+
+            <tr>
+                <b><td>Date and Time</td></b>
+                <td>Date</td>
+                <td>Start Time</td>
+                <td>Number of Guests</td>
+            </tr>
+            <tr>
+                <b><td>Food</td></b>
+                <td>Size</td>
+                <td>Drinks</td>
+                <td>Cake</td>
+            </tr>
+        
+            <tr>
+                <b><td>Decorations</td></b>
+                <td>Color Scheme</td>
+                <td>Additional Comments</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+   
+    <form action="w5\confirm.html" method="GET">
+        <!-- Start of Table -->
+        <table>
+            <!-- The head -->GET
+            <thead>
+                <!-- First row in head -->
+                <tr>
+                    <th>Labels</th><br><th>Form Fields</th>
+                    <th>Input</th>
+                </tr>
+            </thead>
+            <!-- The Body -->
+            <tbody>
+                <!-- First row of Body -->
+                <tr>
+                    <!-- Label -->
+                    <label for="gfirst">Parent/Guardian Name</label> 
+                    <td>First Name</td>
+                    <!-- Input -->
+                    <td><input type="text" maxlength="20" name="gfirst" id="g-first" placeholder="First Name" required></td>
+                </tr>  
+
+                <tr>
+                    <!-- Label -->
+                    <label for="glast">Parent/Guardian Name</label> 
+                    <td>Last Name</td>
+                    <!-- Input -->
+                    <td><input type="text" maxlength="20" name="glast" id="g-last" placeholder="Last Name" required></td>
+                </tr>
+                <br>
+
+                <tr>
+                    <!-- Label -->
+                    <label for="c-first">Child's First Name</label> 
+                    <td>Child'S First Name</td>
+                    <!-- Input -->
+                    <td><input type="text"  name="cfirst" id="c-first" placeholder="Child's First Name" required></td>
+
+                </tr>
+
+                <tr>
+                    <!-- Label -->
+                    <label for="age">Age</label> 
+                    <td>Child's Age</td>
+                    <!-- Input -->
+                    <td><input type="number" name="age" id="age" value="3" placeholder="Child's Age"  required></td>
+                </tr>
+                <br>
+                <tr>
+                    <!-- Label -->
+                    <label for="date">Date and Time</label> 
+                    <td>Date</td>
+                    <!-- Input -->
+                    <td><input type="date"  name="date" id="date" placeholder="Date" required></td>
+                </tr> 
+                
+                <tr>
+                    <!-- Label -->
+                    <label for="time">Time</label> 
+                    <td>Start Time</td>
+                    <!-- Input -->
+                    <td><input type="time" name="time" id="s-time" placeholder="Start Time" required></td>
+                </tr>  
+
+                <tr>
+                    <!-- Label -->
+                    <label for="guests">Guests</label> 
+                    <td>Number of Guests</td>
+                    <!-- Input -->
+                    <td><input type="number" name="guests" value="5" placeholder="Number of Guests"></td>
+                </tr>  
+                <br>
+             
+                <tr>
+                    <!-- Label -->
+                    <label for="size">Size</label> 
+                    <td>Size</td>
+                    <!-- Input -->
+                    <td><input type="radio" value="sm , md , lg" name="size" id="sm" placeholder="sm"></td>
+                    <td><input type="radio" value="sm , md , lg" name="size" id="md" placeholder="md"></td>
+                    <td><input type="radio" value="sm , md , lg" name="size" id="lg" placeholder="lg"></td>
+                </tr>  
+
+                <tr>
+                    <!-- Label -->
+                    <td>Coke</td>
+                    <!-- Input -->
+                    <td><input type="checkbox" name="drink1" id="drink1" value="coke" checked></td><label for="drink1">Coke</label><br>
+                </tr>  
+
+                <tr>
+                    <!-- Label -->
+                    <td>Sprite</td>
+                    <!-- Input -->
+                    <td><input type="checkbox" name="drink2" id="drink2" value="sprite" checked></td><label for="drink2">Sprite</label><br>
+                    <td><input type="checkbox" name="drink3" id="drink3" value="fruit punch" checked></td><label for="drink3">fruit punch</label><br>
+                    <td><input type="checkbox" name="drink4" id="drink4" value="lemonade" checked></td><label for="drink4">lemonade</label><br>
+                    <td><input type="checkbox" name="drink5" id="drink5" value="iced tea" checked></td><label for="drink5">iced tea</label>
+                </tr>  
+
+                <tr>
+                    <!-- Label -->
+                    <label for="cake">Cake</label> 
+                    <td>Cake</td>
+                    <!-- Input -->
+                    <td><select name="cake" id="cake"></td>
+                    <!-- Input -->
+                    <td>Cake Options</td>
+                    <td><option>Chocolate</option></td>
+                    <td><option>Vanilla</option></td>
+                    <td><option>I'll bring my own</option></td>
+                </tr>  
+
+                <tr>
+                    <!-- Label -->
+                    <label for="colors">Colors</label> 
+                    <td>Color Scheme</td>
+                    <!-- Input -->
+                    <td><input type="color" name="colors" id="colors"></td>
+                </tr>  
+
+                <tr>
+                    <!-- Label -->
+                    <label for="comments">Comments</label> 
+                    <td>Comments</td>
+                    <!-- Input -->
+                    <td><textarea name="comments" id="comments" placeholder="Please add any additional comments here"></td>
+                </tr>  
+
+                <tr>
+                    <!-- Label -->
+                    <label for="gfirst">Parent/Guardian Name</label> 
+                    <td>Submit</td>
+                    <!-- Input -->
+                    <td><input type="submit" value="Submit"></td>
+                </tr>  
+
+            </tbody>
+
+        </table>
+    </form>
+
     
 </body>
 </html>
