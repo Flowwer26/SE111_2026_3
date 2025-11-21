@@ -1,19 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--The type of font we are using-->
     <meta charset="UTF-8">
-    <!--Tells the -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Saniyyah Shaheed">
-    <meta name="description" content="Default HTML Page for SE 111">
     
-    <link type="text/css" rel="stylesheet" href="style.css">
+    <meta name="Saniyyah Shaheed" content="Program">
+    <meta name="descriptions" content="W6 Javascript Pay Calculator">
+    
+    <title>W6 | JavaScript Pay Calculator</title>
 
-    <title>Week 5 | Tables and Forms</title>
+   
+    <style>
+       
+        body {
+            background-color:grey;
+        }
+    </style>
 </head>
 <body>
-    <!--Build your Table and Form here-->
-    
+    <h1>W6 | JavaScript Pay Calculator</h1>
+
+    <!--IN DOCUMENT JAVASCRIPT-->
+    <script>
+        //writing JS in here
+        //this is a COMMENT in JS
+
+        //all variables must be DECLARED before they can be defined & used
+        //we declare a variable with the keyword: var 
+
+        var num1 = 14.50
+        var num2 = 32
+        var num3 = .20 * 2
+
+        var name  
+        name ="HP"
+        var hly_P ="Hourly Pay"
+        var hly_P = num1
+        
+        var name
+        name ="HW"
+        var hrs_W ="Hours Worked"
+        var hrs_W = num2
+
+        var name
+        name ="USR"
+        var unc_S ="Uncle Sam's Share"
+        var unc_S = num3
+
+
+        var netPay = num1 * num2 + num3
+        var grossPay = num1 * num2 
+
+        function multiply(num1,num2)
+
+            return CSSMathProduct
+
+            CSSMathProduct = grossPay
+
+
+        console.log(`Hourly Pay: ${num1} | Hours Worked: ${num2}  Gross Pay: ${CSSMathProduct}`)
+        alert(`Hi there, ${name}!`)
+
+        console.log(`passed the alert()`)
+
+
+        //INPUT-------------------
+        //prompt() prompting the user with a message; a pop-up with text field input element is displayed - user enters data into field, presses OK to continue
+        var hly_P  = prompt(`Please enter your hourly pay: `)
+
+        console.log(`passed the prompt()`)
+
+        console.log(`Hourly Pay: ${hly_P}`)   //for developer/debugging
+        alert(`Hourly Pay: ${hly_P}`)         //for user
+
+        var hrs_W  = prompt(`Please enter your hours worked: `)
+
+        console.log(`Hours Worked: ${hrs_W}`)   //for developer/debugging
+        alert(`Hours Worked: ${hrs_W}`)         //for user
+
+        //CAST PROMPT RETURNS TO ENSURE THEY ARE NUMBERS
+        //Must use Number() to gain access to Number properties + methods
+        var hly_P = Number(prompt(`Enter hourly pay: `))
+        //userNum = Number(userNum)
+        console.log(userhrl_p.toFixed(2)) //displays a number to a rounded decimal
+
+        var hrs_W = Number(prompt(`Enter hours worked: `))
+        console.log(hrs_W.toFixed(2)) //displays a number to a rounded decimal
+
+          
+        
+
+        function mutliply(num1, num2)
+
+            return CSSMathProduct 
+
+            CSSMathProduct = grossPay
+
+            var unc_S = grossPay * 0.20
+
+        alert(`Uncle Sam's Share : $${tax.toFixed(2)}`)
+        console.log(`Uncle Sam's Share : $${tax.toFixed(2)}`)
+
+
+        function multiply(grossPay,unc_S)
+
+            return CSSMathProduct = netPay
+
+        alert(`NET PAY : $${tax.toFixed(2)}`)
+        console.log(`NET PAY : $${tax.toFixed(2)}`)
+
+        //alert(`GROSS PAY: $${} \nTAX AMOUNT: $${} \nNET PAY: $${}`) //for w6 final display
+
+    </script>
+
+    <h3>Your taxes due are: `${tax}`</h3>
+
 </body>
 </html>
